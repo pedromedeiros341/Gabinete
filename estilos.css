@@ -1,0 +1,281 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family:montserrat,sans-serif;
+}
+
+.banner{
+	width: 100%;
+	height: 50vh;
+background-image: url(./images/1.jpg);
+background-size: cover;
+background-position: center;
+}
+
+
+.navbar{
+	width: 85%;
+	margin: auto;
+	padding: 35px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo{
+width: 130px;
+cursor: pointer;
+}
+
+.navbar ul li{
+	list-style: none;
+	display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+}
+.navbar ul li::after{
+   content: '';
+   height: 3px;
+   width: 0%;
+   background: #009688;
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+	width: 100%;
+}
+.conteudo{
+	width: 100%;
+	position: absolute;
+	top: 150%;
+	text-align: center;
+	color: #fff;
+}
+
+
+.conteudo h1{
+     margin: 20px auto;
+     font-weight: 300;
+     font-size: 70px;
+     font-family: montserrat,sans-serif;
+}
+.conteudo p{
+	margin: 20px auto;
+	font-weight: 100;
+	line-height: 25px;
+	font-size: 40px;
+	font-family: Montserrat,sans-serif;
+}
+
+.botao{
+	width: 200px;
+	background-color: transparent;
+	padding: 10px 40px;
+	border-radius: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	margin-top: 20px;
+	color: white;
+	border: 2px solid #009688;
+	cursor: pointer;
+}
+.botao:hover{
+	color:#009688;
+}
+
+
+.sobre{
+	width: 100% ;
+	padding: 78px 0;
+	background-color: white;
+	text-indent: 8px;
+}
+.sobre img{
+	height: auto;
+	width: 500px;
+}
+.sobrenos {
+	width: 450px;
+}
+.main{ width: 1130px;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.sobrenos h2{
+	font-size: 45px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+
+.sobrenos p{
+	font-size: 20px;
+	margin-bottom: 20px;
+	line-height: 28px;
+	margin-bottom: 44px;
+	text-align: justify;
+	
+}
+
+.servicos{
+	background: #f1f1f1;
+	text-align: center;
+	text-align: inn;
+}
+
+.servicos h3{
+	display: inline-block;
+	text-transform: uppercase;
+	border-bottom: 4xp solid blue;
+	font-size: 30px;
+	padding-bottom: 10px;
+	margin-top: 40px;
+}
+.cen{
+	max-width: 1200px;
+	margin: auto;
+	overflow: hidden;
+	padding: 20px;
+}
+
+.servico{
+	display: inline-block;
+	width: calc(100% / 3); <!-- ????-->
+	margin: 0 -2px;
+	padding: 20px;
+	box-sizing: border-box;
+	cursor: pointer;
+	transition: 0.4s;
+}
+.servico:hover{
+	background: #fff;
+}
+.servico i{
+	color: skyblue;
+	font-size: 34px;
+	margin-bottom: 30px;
+}
+
+.servico h4{
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+.servico p{
+	color: gray;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+
+.lista-links {
+	list-style: none;
+	padding-left: 0px;
+	margin-bottom: 0px;
+}
+
+
+.lista-links a {
+	color: white;
+}
+.lista-links a:hover {
+	color:#009688;
+}
+.lista-links li {
+	display: inline;
+	margin: 0px 10px;
+}
+
+
+
+
+@media screen and ( max-width: 800px){  
+	.servico{
+		width: 50%;                              <!-- Visualização-->
+	}
+}
+
+
+
+
+.contactos{
+	background: white;
+	text-align: center;
+	text-align: inn;
+}
+
+.contactos h5{
+	display: inline-block;
+	text-transform: uppercase;
+	border-bottom: 4xp solid blue;
+	font-size: 30px;
+	padding-bottom: 10px;
+	margin-top: 40px;
+}
+.cont{
+	max-width: 1200px;
+	margin: auto;
+	overflow: hidden;
+	padding: 20px;
+}
+
+.contacto{
+	display: inline-block;
+	width: calc(100% / 3); <!-- ????-->
+	margin: 0 -2px;
+	padding: 20px;
+	box-sizing: border-box;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+.contacto i{
+	color: ;
+	font-size: 34px;
+	margin-bottom: 30px;
+}
+
+.contacto h6{
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+.contacto p{
+	color: gray;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+
+@media screen and ( max-width: 800px){  
+	.contacto{
+		width: 50%;                              <!-- Visualização-->
+	}
+}
+
+@media screen and ( max-width: 800px){  
+	.sobre{
+		width: 50%;                              <!-- Visualização-->
+	}
+}
+
